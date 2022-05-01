@@ -1,0 +1,24 @@
+npm init
+npm install express nodemon
+npm install mongoose
+npm install dotenv
+npm install cors
+npm install body-parser
+npm start
+
+**************
+app.use(auth);
+
+// Middlewares
+app.use('/posts', () => {
+  console.log('This is a middleware running');
+});
+
+await mongoose.connect('mongodb://localhost/my_database', {
+ useNewUrlParser: true,
+ useUnifiedTopology: true,
+ useFindAndModify: false,
+ useCreateIndex: true
+});
+
+********************
