@@ -21,8 +21,12 @@ app.get('/', (req, res) => {
 
 //connect to db
 mongoose.connect(process.env.DB_CONNECTION, { useNewUrlParser: true }, () =>
-  console.log('connected to DB!')
+  console.log(`connected to DB! to ${process.env.DB_CONNECTION}`)
 );
 
 // How do we start listening to the server
-app.listen(3000);
+/**
+ * now listing the server on port number 3000 :)
+ */
+
+ app.listen(3000, ()=>console.log("Server is live at port 3000 🔥🔥🔥"));
