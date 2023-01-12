@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const port = 4000;
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const cors = require('cors');
@@ -29,4 +30,4 @@ mongoose.connect(process.env.DB_CONNECTION, { useNewUrlParser: true }, () =>
  * now listing the server on port number 3000 :)
  */
 
- app.listen(3000, ()=>console.log("Server is live at port 3000 🔥🔥🔥"));
+ app.listen(port, ()=>console.log("Server is live at port ${port} 🔥🔥🔥"));
