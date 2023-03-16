@@ -1,2 +1,2 @@
-# REST-API-POSTS
-NodeJs Backend
+# POSTS REST API 
+
